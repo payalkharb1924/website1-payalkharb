@@ -1,0 +1,178 @@
+body {
+    background-color: bisque;
+}
+.one {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+}
+.two {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+}
+.three {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+}
+
+.instruments {
+    float: left;
+    height: 250px;
+    margin-right: 50px;
+    transition: 1s;
+}
+.instruments:hover{
+    transform: rotate(-4.5deg);
+    box-shadow: 0.5em 0.5em 2em chocolate;
+}
+.music {
+    width: 45%;
+    margin-right: 50px;
+    transition: 1s;
+}
+.music:hover{
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+.main {
+    flex: 1;
+    margin: 50px 50px 0 50px;
+}
+
+.logo img {
+    width: 200px;
+    height: 110px;
+}
+
+.music img{
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    /* border: 5px solid white; */
+    filter: drop-shadow(5px 5px .05rem chocolate);
+    /* filter: opacity(25%); */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+}
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: chocolate;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+    width: 550px;
+    padding: 2px 2px 2px 2px ;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    text-align: justify;
+    color: brown;
+}
+span {
+    color: white;
+    text-shadow: 5px 5px chocolate, 0 0 2em chocolate;
+    font-family: 'Lobster', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    margin: 100px 0 0 0;
+}
+footer img {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    padding-inline-end: 30px;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+footer p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+@media (max-width: 680px) {
+    .logo img {
+        width: 80px;
+        height: 45px;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 50px;
+        width: 300px;
+        text-align: center;
+    }
+    .one {
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    .two {
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    .three {
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    .music {
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .music img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        display: inline;
+    }
+    footer {
+        height: 200px;
+    }
+    footer ul li {
+        display: block;
+    }
+    footer img {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+    footer p {
+        font-size: 10px;
+        height: 20px;
+    }
+}
